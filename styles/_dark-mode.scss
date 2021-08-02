@@ -1,0 +1,98 @@
+body {
+    transition: all 0.1s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+body.dark {
+    background-color: $gray-night-mode;
+    .icon-search,
+    .search-gifos__close,
+    .icon-burger,
+    .icon-close,
+    .finder-bar__input {
+        background-color: $gray-night-mode;
+        color: white;
+    }
+    .bar-navigation {
+        border-color: black;
+    }
+    .bar-navigation__menu {
+        background-color: black;
+    }
+    .finder-gifos__title,
+    .trending-gifos__title,
+    .trending-gifos__list,
+    .trending-gifos__list a,
+    .searching__title,
+    .trending-section__info,
+    .finder-bar__input,
+    .links-content__title {
+        color: white;
+    }
+    .finder-bar {
+        border-color: white;
+    }
+    .trending-section {
+        background-color: $gray-trending;
+        color: white;
+    }
+    .footer {
+        color: white;
+        border-color: black;
+    }
+    .searching__button,
+    .bar-navigation__btn,
+    .trending-section__button,
+    .links-content__button {
+        border: white solid 1px;
+        color: white;
+        background-color: $gray-night-mode;
+        &:hover {
+            border: none;
+            color: black;
+            background-color: white;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .bar-navigation__menu {
+            background-color: $gray-night-mode;
+        }
+        .item-Menu {
+            color: white;
+        }
+        .current-page {
+            color: $gray-line;
+        }
+        .icon-icon_facebook,
+        .icon-icon-twitter,
+        .icon-icon_instagram {
+            color: #CDD6E0;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .current-page-create-gifos,
+        .create-gifos__wrapper-info,
+        .create-gifos-status__timming,
+        .screen {
+            color: white;
+        }
+        .screen,
+        .create-gifos-status__counter {
+            border-color: white;
+        }
+        .create-gifos-status__repeat-capture {
+            background-color: $gray-night-mode;
+            color: white;
+        }
+        .counter {
+            border-color: white;
+            color: white;
+            &-process {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}

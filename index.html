@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="./assets/logo-mobile.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/icomoon/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">    
+
+    <title>GIFOS</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="bar-navigation">
+            <input class="bar-navigation__menu-checkbox" type="checkbox" name="checkbox-menu" id="checkbox-menu">
+
+            <i class="icon-burger"></i>
+
+            <i class="icon-close"></i>
+
+            <a class="home-link" href="#"><img class="bar-navigation__logo" src = "./assets/logo-mobile.svg" alt=" Logo página de GifOS."></a>
+
+            <ul class="bar-navigation__menu">
+
+                <li><a href="#" class="item-Menu night-mode">Modo Nocturno</a></li>
+
+                <li><a href="#" class="item-Menu day-mode hidden">Modo Diurno</a></li>
+
+                <li><a href="./favoritos.html" class="item-Menu">Favoritos</a></li>
+
+                <li><a href="./my_gifs.html" class="item-Menu">Mis GIFOS</a></li>
+            </ul>
+
+            <a class="bar-navigation__btn" href="./create_gifos.html"><i class="icon-btn-create-gifo"></i></a>
+
+        </nav>
+    </header>
+    <main class="main">
+        <section class="finder-gifos">
+
+            <h1 class="finder-gifos__title">Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+
+            <img class="finder-gifos__img" src="./assets/ilustra_header.svg" alt=" Imagen bienvenida">
+            
+            <div class="finder-bar" id="search_bar_id">
+
+                <div class="wrapper">
+
+                    <input type="text" placeholder=" Busca GIFOS y más" class="finder-bar__input">
+
+                    <button type="button" class="finder-bar__button icon-search" ><i class="icon-icon-finder"></i></button>
+
+                    <button type="button" class="finder-bar__button search-gifos__close hidden"><i class="icon-btn-close"></i></button>
+
+                </div>
+
+                         
+                <ul class="search-gifos__sugerencias hidden">
+                </ul>
+                
+            </div>
+            
+        </section>
+
+    
+        <section class="trending-gifos">
+
+            <h2 class="trending-gifos__title">Trending:</h2>
+
+            <ul class="trending-gifos__list">
+
+            </ul>
+        </section>
+
+
+        <section class="searching hidden">
+
+            <span class="searching__line"></span>
+
+            <h2 class="searching__title"></h2>
+
+            <div class="no_search_results hidden">
+
+                <img class="no_search_results__img" src="./assets/icon-busqueda-sin-resultado.svg" alt="Busqueda sin resultados">
+
+                <p class="no_search_results__info"> intenta con otra búsqueda</p>
+            </div>
+
+            <div class="gifos-wrapper">
+
+            </div>
+
+            <button class="searching__button hidden">VER MAS</button>
+
+        </section>
+        
+        <section class="trending-section">
+
+            <h2 class="trending-section__title">Trending GIFOS</h2>
+
+            <p class="trending-section__info">Mira los últimos<span></span>GIFOS de nuestra comunidad.</p>
+
+            <button type="button" class="trending-section__button trending-section__button-left" ><i class="icon-btn_left"></i></button>
+
+            <button type="button" class="trending-section__button trending-section__button-right" ><i class="icon-btn_right"></i></button>
+            
+            <div class="carrousel-gifos">
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="social-networks">
+
+            <p class="social-networks__share">Compartir en:</p>
+
+            <div class="social-networks__icons">
+
+                <a href="https://www.facebook.com/" target="_blank"> <i class="icon-icon_facebook"></i> </a>
+                <a href="https://twitter.com/" target="_blank"> <i class="icon-icon-twitter"> </i></a>
+                <a href="https://www.instagram.com/"> <i class="icon-icon_instagram"></i> </a>
+
+            </div>
+        </div>
+        <p class="copy-rights">© GIFOS 2021 All Rights Reserved.</p>
+    </footer>
+
+    <div class="modal hidden">
+        <div class="fullsize">
+            <button class="fullsize-exit"><i class="icon-btn-close"></i></button>
+            <img class="fullsize-gifo" src="#" alt="Gifo Fullsize">
+            <div class="fullsize-footer">
+                <div class="fullsize-info-wrap">
+                    <p class="fullsize-user">User</p>
+                    <p class="fullsize-title">title</p>
+                </div>
+                <div class="fullsize-btn-wrap">
+                    <button class="fullsize-button fav-hover" data-type="add-favorite" type="button"><i class="icon-icon-fav-hover"></i></button>
+                    <button class="fullsize-button fav-active hidden" data-type="remove-favorite" type="button"><i class="icon-icon-fav-active"></i></button>
+                    <button class="fullsize-button" data-download="full-screen" data-type="download" type="button"><i class="icon-icon-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/night_mode.js"></script>
+
+
+    <script type="module" src="./scripts/trending_gifos.js"></script>
+    <script type="module" src="./scripts/quest.js"></script>
+    <script type="module" src="./scripts/trending_carrousel.js"></script>
+</body>
+
+</html>
